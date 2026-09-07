@@ -1,13 +1,13 @@
 {
   "groupName": "Arknights x Endfield CG: Terralco",
   "tagline": "Photo archive — Arknights & Endfield cosplay crossover collective",
-  "facebookUrl": "https://facebook.com/REPLACE_WITH_YOUR_PAGE",
+  "facebookUrl": "https://www.facebook.com/share/19PoL8cMkL/",
   "albums": [
     {
       "id": "welcome-to-terralco",
       "title": "Welcome to Terralco",
-      "date": "2026-01-01",
-      "location": "Sample entry",
+      "date": "2026-09-07",
+      "location": "Manila, Philippines",
       "description": "This is a placeholder album so you can see how the archive looks. Replace it — or add new ones — through data/albums.json or the admin panel.",
       "cover": "https://picsum.photos/seed/terralco-cover/900/1200",
       "photos": [
