@@ -35,8 +35,17 @@
       "description": "Shenanigans of the CG - online and IRL",
       "date": "2026-09-07",
       "location": "Manila, Philippines",
-      "cover": "",
-      "photos": []
+      "cover": "https://res.cloudinary.com/zero41645/image/upload/v1788783159/terralco/behind-the-scenes/opvveqt5hyleenui2wew.png",
+      "photos": [
+        {
+          "url": "https://res.cloudinary.com/zero41645/image/upload/v1788783159/terralco/behind-the-scenes/opvveqt5hyleenui2wew.png",
+          "caption": ""
+        },
+        {
+          "url": "https://res.cloudinary.com/zero41645/image/upload/v1788783159/terralco/behind-the-scenes/zxwmmsml8fst1b6eynkc.png",
+          "caption": ""
+        }
+      ]
     }
   ]
 }
