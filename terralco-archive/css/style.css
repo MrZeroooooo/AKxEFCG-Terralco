@@ -28,6 +28,12 @@
 
 * { box-sizing: border-box; }
 
+/* The browser's built-in [hidden] rule and our .overlay { display:flex }
+   rule have equal specificity, so without this, whichever is declared
+   later in the stylesheet wins — which could leave hidden overlays
+   visible. This guarantees [hidden] always wins. */
+[hidden] { display: none !important; }
+
 html { scroll-behavior: smooth; }
 
 @media (prefers-reduced-motion: reduce) {
