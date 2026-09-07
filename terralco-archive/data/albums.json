@@ -53,8 +53,13 @@
       "description": "",
       "date": "2026-09-07",
       "location": "",
-      "cover": "",
-      "photos": []
+      "cover": "https://res.cloudinary.com/zero41645/image/upload/v1788789069/terralco/randoms/ckeazjmziyjo5lj85xho.png",
+      "photos": [
+        {
+          "url": "https://res.cloudinary.com/zero41645/image/upload/v1788789069/terralco/randoms/ckeazjmziyjo5lj85xho.png",
+          "caption": ""
+        }
+      ]
     }
   ]
 }
