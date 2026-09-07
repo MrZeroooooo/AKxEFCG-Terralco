@@ -1,0 +1,12 @@
+{
+  "name": "terralco-archive",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Photo archive for Arknights x Endfield CG: Terralco cosplay collective.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}

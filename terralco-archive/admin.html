@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terralco Archive — Collaborator Panel</title>
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <polygon points="20,2 36,11 36,29 20,38 4,29 4,11" fill="none" stroke="currentColor" stroke-width="2"/>
+          <polygon points="20,10 29,15 29,25 20,30 11,25 11,15" fill="currentColor" opacity="0.85"/>
+        </svg>
+      </span>
+      <div class="brand-text">
+        <span class="brand-name">Terralco Archive</span>
+        <span class="brand-tagline">Collaborator panel</span>
+      </div>
+    </div>
+    <a href="index.html" class="fb-link"><span>&larr; Back to archive</span></a>
+  </div>
+</header>
+
+<main class="admin-main">
+
+  <!-- LOGIN VIEW -->
+  <section id="loginView" class="admin-panel login-panel">
+    <p class="hero-eyebrow">RESTRICTED ACCESS</p>
+    <h1 class="admin-title">Collaborator sign in</h1>
+    <p class="admin-sub">This area is for people who upload photos on behalf of Terralco. If you're only here to view the archive, head back home.</p>
+
+    <form id="loginForm" class="stacked-form">
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" autocomplete="username" required>
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="password" autocomplete="current-password" required>
+      </label>
+      <button type="submit" class="primary-btn">Sign in</button>
+      <p id="loginError" class="form-error" hidden></p>
+    </form>
+  </section>
+
+  <!-- DASHBOARD VIEW -->
+  <section id="dashboardView" class="admin-panel" hidden>
+    <div class="dash-header">
+      <div>
+        <p class="hero-eyebrow">SIGNED IN AS <span id="whoami"></span></p>
+        <h1 class="admin-title">Manage the archive</h1>
+      </div>
+      <button type="button" id="logoutBtn" class="ghost-btn">Sign out</button>
+    </div>
+
+    <div class="admin-grid">
+
+      <div class="admin-card">
+        <h2>1. Create an album</h2>
+        <form id="createAlbumForm" class="stacked-form">
+          <label>
+            <span>Title</span>
+            <input type="text" name="title" required placeholder="e.g. Wave Convention 2026">
+          </label>
+          <label>
+            <span>Date</span>
+            <input type="date" name="date">
+          </label>
+          <label>
+            <span>Location</span>
+            <input type="text" name="location" placeholder="e.g. SMX Convention Center">
+          </label>
+          <label>
+            <span>Description</span>
+            <textarea name="description" rows="3" placeholder="A line or two about this shoot"></textarea>
+          </label>
+          <button type="submit" class="primary-btn">Create album</button>
+          <p id="createAlbumStatus" class="form-status" hidden></p>
+        </form>
+      </div>
+
+      <div class="admin-card">
+        <h2>2. Upload photos</h2>
+        <form id="uploadForm" class="stacked-form">
+          <label>
+            <span>Album</span>
+            <select name="albumId" id="albumSelect" required>
+              <option value="">Loading albums…</option>
+            </select>
+          </label>
+          <label>
+            <span>Photos</span>
+            <input type="file" name="files" id="fileInput" accept="image/*" multiple required>
+          </label>
+          <button type="submit" class="primary-btn" id="uploadBtn">Upload</button>
+          <div id="uploadProgress" class="upload-progress" hidden></div>
+          <p id="uploadStatus" class="form-status" hidden></p>
+        </form>
+      </div>
+
+      <div class="admin-card admin-card-wide">
+        <h2>3. Existing albums</h2>
+        <p class="admin-sub">Remove an album entirely, or delete individual photos.</p>
+        <div id="manageList" class="manage-list">
+          <p class="admin-sub">Loading…</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

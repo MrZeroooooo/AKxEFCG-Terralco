@@ -1,0 +1,195 @@
+.admin-body { min-height: 100vh; }
+
+.admin-main {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 56px 24px 100px;
+}
+
+.admin-title {
+  font-size: clamp(26px, 4vw, 34px);
+  margin: 10px 0 12px;
+}
+
+.admin-sub {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  max-width: 62ch;
+  margin: 0 0 24px;
+}
+
+.login-panel {
+  max-width: 420px;
+  margin: 40px auto 0;
+}
+
+.dash-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+#whoami { color: var(--teal); }
+
+.stacked-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stacked-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.stacked-form input,
+.stacked-form select,
+.stacked-form textarea {
+  background: var(--bg);
+  border: 1px solid var(--line-bright);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+.stacked-form input:focus,
+.stacked-form select:focus,
+.stacked-form textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+.stacked-form textarea { resize: vertical; }
+
+.primary-btn {
+  align-self: flex-start;
+  padding: 11px 22px;
+  background: var(--amber);
+  color: #16130a;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: filter 0.2s var(--ease);
+}
+.primary-btn:hover { filter: brightness(1.1); }
+.primary-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.ghost-btn {
+  padding: 9px 16px;
+  background: transparent;
+  border: 1px solid var(--line-bright);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.ghost-btn:hover { border-color: var(--rust); color: var(--rust); }
+
+.form-error {
+  margin: 0;
+  font-size: 13px;
+  color: var(--rust);
+}
+.form-status {
+  margin: 0;
+  font-size: 13px;
+  color: var(--teal);
+}
+.form-status.is-error { color: var(--rust); }
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.admin-card-wide { grid-column: 1 / -1; }
+
+.admin-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.admin-card h2 {
+  font-size: 17px;
+  margin: 0 0 18px;
+}
+
+.upload-progress {
+  font-size: 12.5px;
+  color: var(--text-faint);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.manage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.manage-album {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+.manage-album-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.manage-album-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+}
+.manage-album-meta {
+  font-size: 12px;
+  color: var(--text-faint);
+}
+.manage-photo-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 8px;
+}
+.manage-photo {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.manage-photo img { width: 100%; height: 100%; object-fit: cover; }
+.manage-photo button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(12, 14, 19, 0.85);
+  color: var(--rust);
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+}
+
+@media (max-width: 760px) {
+  .admin-grid { grid-template-columns: 1fr; }
+}
