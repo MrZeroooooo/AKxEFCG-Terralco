@@ -12,10 +12,6 @@
       "cover": "https://picsum.photos/seed/terralco-cover/900/1200",
       "photos": [
         {
-          "url": "https://picsum.photos/seed/terralco-2/1600/1200",
-          "caption": "Sample photo 2"
-        },
-        {
           "url": "https://picsum.photos/seed/terralco-3/1200/1600",
           "caption": "Sample photo 3"
         },
