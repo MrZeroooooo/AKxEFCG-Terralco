@@ -28,6 +28,15 @@
           "caption": "Sample photo 4"
         }
       ]
+    },
+    {
+      "id": "behind-the-scenes",
+      "title": "Behind the Scenes",
+      "description": "Shenanigans of the CG - online and IRL",
+      "date": "2026-09-07",
+      "location": "Manila, Philippines",
+      "cover": "",
+      "photos": []
     }
   ]
 }
