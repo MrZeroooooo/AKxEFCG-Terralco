@@ -4,24 +4,6 @@
   "facebookUrl": "https://www.facebook.com/share/19PoL8cMkL/",
   "albums": [
     {
-      "id": "welcome-to-terralco",
-      "title": "Welcome to Terralco",
-      "date": "2026-09-07",
-      "location": "Manila, Philippines",
-      "description": "This is a placeholder album so you can see how the archive looks. Replace it — or add new ones — through data/albums.json or the admin panel.",
-      "cover": "https://picsum.photos/seed/terralco-cover/900/1200",
-      "photos": [
-        {
-          "url": "https://picsum.photos/seed/terralco-3/1200/1600",
-          "caption": "Sample photo 3"
-        },
-        {
-          "url": "https://picsum.photos/seed/terralco-4/1200/1200",
-          "caption": "Sample photo 4"
-        }
-      ]
-    },
-    {
       "id": "behind-the-scenes",
       "title": "Behind the Scenes",
       "description": "Shenanigans of the CG - online and IRL",
